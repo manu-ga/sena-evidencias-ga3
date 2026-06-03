@@ -33,7 +33,7 @@ Los scripts están diseñados para ser ejecutados en:
 2. Entornos de Node.js (requiere adaptaciones menores para entrada de datos).
 
 ## Autor
-- **Aprendiz:** 
+- **Aprendiz:** Manuel David Carvajal Machado 
 - **Programa:** Análisis y Desarrollo de Software
 - **Ficha:** 
 - **Centro:** SENA
