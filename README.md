@@ -1,54 +1,50 @@
-# Evidencias GA3-220501093-AA2-EV03 - Análisis y Desarrollo de Software (SENA)
+# Evidencias GA3-220501093-AA2-EV03 - Programación Orientada a Objetos (SENA)
 
-Este repositorio contiene las soluciones a los 10 problemas planteados en la actividad **GA3-220501093-AA2-EV03** de la guía de aprendizaje del programa de Análisis y Desarrollo de Software del SENA. La actividad se centra en la aplicación de conocimientos de programación y algoritmia para resolver problemas utilizando funciones y procedimientos en JavaScript.
+Este repositorio contiene las soluciones técnicas para la evidencia **GA3-220501093-AA2-EV03**, enfocada en el concepto de **Encapsulamiento** dentro de la Programación Orientada a Objetos (POO), utilizando el lenguaje **Python**.
+
+## Descripción de la Actividad
+Según las directrices del instructor Ricardo Alfonso González Vargas, se han implementado tres ejercicios prácticos que demuestran el uso de atributos privados, métodos getter/setter y el uso de decoradores `@property` para asegurar la integridad de los datos.
 
 ## Estructura del Repositorio
-
-Los ejercicios se encuentran organizados en una carpeta dedicada, con un archivo individual para cada problema:
+Los ejercicios están organizados en carpetas individuales dentro del directorio `python_encapsulamiento/`:
 
 ```text
 sena-evidencias-ga3/
-├── ejercicios/         # Carpeta con las soluciones individuales (.js)
-│   ├── ejercicio1.js   # Tiempo medio maratón
-│   ├── ejercicio2.js   # Conversión Celsius a Fahrenheit
-│   ├── ejercicio3.js   # Nota parcial de análisis
-│   ├── ejercicio4.js   # Capital e interés (años para doblar)
-│   ├── ejercicio5.js   # Filtrar números <= 25
-│   ├── ejercicio6.js   # Venta de camisas (USD a Pesos)
-│   ├── ejercicio7.js   # Consumo restaurante con descuento
-│   ├── ejercicio8.js   # Cálculo del siguiente segundo
-│   ├── ejercicio9.js   # Producto de 1 hasta N
-│   └── ejercicio10.js  # Tabla de multiplicar decreciente
-└── README.md           # Guía del proyecto
+├── python_encapsulamiento/
+│   ├── ejercicio1_persona/
+│   │   └── persona.py       # Control de edad (0-120) con atributos privados.
+│   ├── ejercicio2_coche/
+│   │   └── coche.py         # Control de velocidad usando decoradores @property.
+│   └── ejercicio3_producto/
+│       └── producto.py      # Control de inventario (Stock) con validaciones.
+└── README.md                # Guía del proyecto
 ```
 
-## Descripción de los Problemas
+## Detalle de los Ejercicios
 
-1.  **Maratón:** Calcula el tiempo medio en minutos por kilómetro para una distancia de 42.195 km.
-2.  **Temperatura:** Convierte grados Centígrados a Fahrenheit.
-3.  **Notas:** Calcula la nota final basada en talleres, quiz (30%) y examen parcial (70%).
-4.  **Capital:** Determina en cuántos años se dobla un capital a una tasa de interés anual.
-5.  **Filtro:** Muestra los números menores o iguales a 25 de una lista de 20 ingresos.
-6.  **Venta:** Suma precios de camisas en dólares y los convierte a pesos colombianos.
-7.  **Restaurante:** Aplica un 20% de descuento si el consumo supera los $50,000.
-8.  **Reloj:** Calcula la hora exacta que marcaría el reloj un segundo después de la hora ingresada.
-9.  **Matemática:** Calcula el producto (factorial) desde 1 hasta un número N dado.
-10. **Tablas:** Genera la tabla de multiplicar de forma decreciente (del 10 al 1) para un número entre 1 y 10.
+### 1. Clase Persona (Protección de Edad)
+Implementación de una clase donde el atributo `edad` es privado (`__edad`). Se utiliza un método `establecer_edad()` que valida que el valor esté en el rango de 0 a 120 años antes de realizar la asignación.
 
-## Cómo Ejecutar los Scripts
+### 2. Clase Coche (Uso de @property)
+Uso de decoradores estándar de Python para manejar el acceso a la velocidad. El setter valida que la velocidad no sea negativa y que no supere el límite máximo de 200 km/h.
 
-Puedes ejecutar cualquiera de los archivos utilizando **Node.js**:
+### 3. Clase Producto (Control de Inventario)
+Una aplicación más compleja que gestiona el stock de un producto. Incluye validaciones para asegurar que no se pueda aumentar stock con valores negativos ni disminuir más de lo que hay disponible en existencia.
+
+## Requisitos de Ejecución
+Para ejecutar estos scripts, debe tener instalado **Python 3.x**. Puede correr cada ejercicio desde la terminal:
 
 ```bash
-node ejercicios/ejercicio1.js
+python3 python_encapsulamiento/ejercicio1_persona/persona.py
+python3 python_encapsulamiento/ejercicio2_coche/coche.py
+python3 python_encapsulamiento/ejercicio3_producto/producto.py
 ```
-
-O copiar el código directamente en la consola de desarrollador de tu navegador favorito.
 
 ## Autor
 - **Aprendiz:** Manuel David Carvajal Machado
 - **Programa:** Análisis y Desarrollo de Software
+- **Instructor:** Ricardo Alfonso González Vargas
 - **SENA**
 
 ---
-*Proyecto desarrollado para el cumplimiento de las evidencias técnicas del SENA.*
+*Evidencia técnica desarrollada para el módulo de Programación y Algoritmia.*
