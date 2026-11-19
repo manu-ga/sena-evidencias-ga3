@@ -34,3 +34,12 @@ REMOTION_BROWSER=/ruta/a/chromium npm run render
 ## Licencia
 
 Remotion tiene una licencia propia: es gratuito para particulares y equipos pequeños, y las empresas más grandes deben comprar una licencia. Revisa las condiciones vigentes en https://www.remotion.dev/license antes de usarlo comercialmente.
+
+## GSAP en Remotion
+
+GSAP 3.15.1 está instalado. `src/GsapDemo.tsx` (composición `GsapDemo`, 4 s) muestra el patrón correcto: la línea de tiempo se crea **en pausa** y se coloca con `tl.seek(frame / fps)` en cada fotograma, para que el render sea exacto. No uses `tl.play()`: depende del reloj real y saldría distinto en cada render.
+
+```bash
+REMOTION_BROWSER=/opt/pw-browsers/chromium npx remotion render src/index.ts GsapDemo out/gsap.mp4
+```
+Licencia de GSAP: "Standard 'no charge' license" (https://gsap.com/standard-license).
