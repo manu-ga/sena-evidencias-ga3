@@ -20,6 +20,6 @@ export const Root: React.FC = () => (
   />
   <Composition id="GsapDemo" component={GsapDemo} durationInFrames={96} fps={24} width={1080} height={1920} />
   <Composition id="AdsVsTrading" component={AdsVsTrading} durationInFrames={adsFrames} fps={timeline.fps} width={1080} height={1920} defaultProps={{ safeGuides: false }} />
-  <Composition id="NawhiReel" component={NawhiReel} durationInFrames={nawhiFrames} fps={nawhiTimeline.fps} width={1080} height={1920} defaultProps={{ safeGuides: false }} />
+  <Composition id="NawhiReel" component={NawhiReel} durationInFrames={nawhiFrames} fps={nawhiTimeline.fps} width={1080} height={1920} defaultProps={{ safeGuides: false, hideSubs: false }} />
   </>
 );

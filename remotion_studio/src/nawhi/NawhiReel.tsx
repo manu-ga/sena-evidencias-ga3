@@ -28,8 +28,8 @@ const place = (cx: number, cy: number, z: number, tx: number, ty: number) => {
   let Y = ty - z * cy * K;
   X = Math.min(0, Math.max(W - z * W, X));
   const h = z * BASE_H;
-  // con zoom, el borde inferior del afiche puede subir hasta 400 px (se ve el fondo rayado) para que lo importante quede sobre los subtítulos
-  Y = h >= H ? Math.min(0, Math.max(H - h - 400, Y)) : Math.min(H - h, Math.max(0, Y));
+  // con zoom, el borde inferior del afiche puede subir hasta 560 px (se ve el fondo rayado) para que lo importante quede sobre los subtítulos
+  Y = h >= H ? Math.min(0, Math.max(H - h - 560, Y)) : Math.min(H - h, Math.max(0, Y));
   return { X, Y };
 };
 
@@ -40,7 +40,7 @@ const Backdrop: React.FC = () => (
 );
 
 const Chip: React.FC<{ text: string; f: number }> = ({ text, f }) => (
-  <div style={{ position: "absolute", top: 290, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: fade(f, 2), transform: `scale(${pop(f, 2)})` }}>
+  <div style={{ position: "absolute", top: 350, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: fade(f, 2), transform: `scale(${pop(f, 2)})` }}>
     <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: text.length > 22 ? 40 : 52, color: WHITE, background: NAVY, borderRadius: 60, padding: "16px 44px", boxShadow: "0 10px 40px rgba(14,58,138,.35)", border: `4px solid ${WHITE}`, letterSpacing: "0.01em" }}>
       {text}
     </div>
@@ -70,12 +70,12 @@ const CamShot: React.FC<{ shot: ShotT; dur: number; end?: boolean }> = ({ shot, 
 
 const EndCard: React.FC<{ f: number }> = ({ f }) => (
   <AbsoluteFill>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 700, bottom: 0, background: `linear-gradient(180deg, transparent, ${NAVY}EE 30%, ${NAVY})` }} />
-    <div style={{ position: "absolute", left: 0, right: 0, top: 800, textAlign: "center", fontFamily: FONT, color: WHITE, transform: `scale(${pop(f, 4)})`, opacity: fade(f, 4) }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 520, bottom: 0, background: `linear-gradient(180deg, transparent, ${NAVY}EE 30%, ${NAVY})` }} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 600, textAlign: "center", fontFamily: FONT, color: WHITE, transform: `scale(${pop(f, 4)})`, opacity: fade(f, 4) }}>
       <div style={{ fontWeight: 900, fontSize: 190, letterSpacing: "0.02em", lineHeight: 1 }}>NAWHI</div>
       <div style={{ display: "inline-block", marginTop: 18, background: SKY, color: NAVY, fontWeight: 900, fontSize: 56, padding: "8px 38px", borderRadius: 50, letterSpacing: "0.06em" }}>ASHWAGANDHA</div>
     </div>
-    <div style={{ position: "absolute", left: 90, right: 90, top: 1130, textAlign: "center", fontFamily: FONT, fontWeight: 600, fontSize: 28, lineHeight: 1.3, color: "#DCE8FA", opacity: fade(f, 14, 6) }}>
+    <div style={{ position: "absolute", left: 90, right: 90, top: 905, textAlign: "center", fontFamily: FONT, fontWeight: 600, fontSize: 28, lineHeight: 1.3, color: "#DCE8FA", opacity: fade(f, 14, 6) }}>
       Producto homeopático de venta libre. Lee las indicaciones. Si tienes una condición de salud o tomas medicamentos, consulta a tu médico.
     </div>
   </AbsoluteFill>
@@ -86,7 +86,7 @@ const Sub: React.FC<{ text: string }> = ({ text }) => {
   const up = text.toUpperCase();
   const size = up.length > 28 ? 62 : up.length > 20 ? 70 : 80;
   return (
-    <div style={{ position: "absolute", left: 60, right: 60, top: 1250, height: 240, display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <div style={{ position: "absolute", left: 60, right: 140, top: 1050, height: 240, display: "flex", alignItems: "center", justifyContent: "center" }}>
       <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: size, lineHeight: 1.06, textAlign: "center", color: WHITE, background: `${NAVY}F0`, borderRadius: 36, padding: "16px 36px", border: `4px solid ${WHITE}`, boxShadow: "0 10px 36px rgba(0,0,0,.3)", transform: `scale(${pop(f, 0)})`, opacity: fade(f, 0, 2) }}>
         {up}
       </div>
@@ -94,7 +94,7 @@ const Sub: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-export const NawhiReel: React.FC<{ safeGuides?: boolean }> = ({ safeGuides = false }) => {
+export const NawhiReel: React.FC<{ safeGuides?: boolean; hideSubs?: boolean }> = ({ safeGuides = false, hideSubs = false }) => {
   const shots = timeline.shots as unknown as ShotT[];
   const subs = timeline.subs as unknown as SubT[];
   return (
@@ -109,15 +109,15 @@ export const NawhiReel: React.FC<{ safeGuides?: boolean }> = ({ safeGuides = fal
           </Sequence>
         );
       })}
-      {subs.map((s, i) => (
+      {!hideSubs && subs.map((s, i) => (
         <Sequence key={`s${i}`} from={fr(s.start)} durationInFrames={Math.max(1, fr(s.end) - fr(s.start))}>
           <Sub text={s.text} />
         </Sequence>
       ))}
       {safeGuides && (
         <AbsoluteFill style={{ pointerEvents: "none" }}>
-          <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 250, background: "#ff000022" }} />
-          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 420, background: "#ff000022" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 340, background: "#ff000022" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 610, background: "#ff000022" }} />
         </AbsoluteFill>
       )}
     </AbsoluteFill>
