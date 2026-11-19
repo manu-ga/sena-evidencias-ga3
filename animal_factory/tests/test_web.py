@@ -47,7 +47,7 @@ def test_status_and_options(client):
     s = client.get("/api/status").json()
     assert s["ffmpeg"].startswith("ffmpeg") and s["voces"]
     o = client.get("/api/options").json()
-    assert len(o["personajes"]) == 8 and {e["id"] for e in o["estilos"]} == {"cartoon", "pastel", "neon"}
+    assert len(o["personajes"]) == 10 and {e["id"] for e in o["estilos"]} == {"cartoon", "pastel", "neon"}
     assert {c["id"] for c in o["calidades"]} == {"borrador", "final"}
     svg = client.get("/api/characters/michi.svg")
     assert svg.status_code == 200 and svg.headers["content-type"].startswith("image/svg")

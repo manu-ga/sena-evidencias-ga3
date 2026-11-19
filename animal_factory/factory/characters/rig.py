@@ -91,6 +91,8 @@ def _tail(spec: CharacterSpec, pose: Pose, st: Style, fur, fur_dark, belly) -> s
                  + _ell(-105, -62, 34, 22, belly, st, 0.8, extra='transform="rotate(-25 -105 -62)"'))
     elif sp == "conejo":
         inner = _ell(-48, -18, 30, 30, "#ffffff", st)
+    elif sp == "tortuga":
+        inner = _path("M0,-14 L-52,0 L0,14 Z", fur, st)
     else:  # oso
         inner = _ell(-40, -12, 26, 26, fur, st)
     return f'<g transform="translate(-55 -215) rotate({ang:.1f})">{inner}</g>'
@@ -206,7 +208,13 @@ def _mouth(spec: CharacterSpec, pose: Pose, st: Style, y: float) -> str:
 def _head(spec: CharacterSpec, pose: Pose, st: Style, fur, fur_dark, belly) -> str:
     sp = spec.species
     parts = [_ears(spec, pose, st, fur, fur_dark, belly)]
-    if sp == "rana":
+    if sp == "tortuga":
+        parts.append(_ell(0, -440, 98, 88, fur, st))
+        parts.append(_ell(0, -405, 56, 40, belly, st, 0.8))
+        for s_ in (-1, 1):
+            parts.append(f'<circle cx="{s_ * 11}" cy="-418" r="4" fill="{st.outline}"/>')
+        mouth_y = -388
+    elif sp == "rana":
         parts.append(_ell(0, -440, 122, 82, fur, st))
         parts.append(_ell(-56, -528, 40, 40, fur, st))
         parts.append(_ell(56, -528, 40, 40, fur, st))
@@ -308,6 +316,9 @@ def _outfit_extra(spec: CharacterSpec, st: Style, oc: str) -> str:
         return (f'<path d="M-6,-352 L-6,-195 M6,-352 L6,-195" stroke="{st.outline}" stroke-width="3"/>'
                 + "".join(f'<circle cx="0" cy="{y}" r="6" fill="{ac}" {_o(st, 0.4)}/>' for y in (-300, -258, -222))
                 + _path("M-76,-345 L-6,-352 L-6,-300 L-76,-300 Z", "none", st, 0.0))
+    if o == "chal":
+        return (_path("M-96,-340 Q0,-382 96,-340 L64,-236 L0,-198 L-64,-236 Z", shade(oc, .82), st, 0.8)
+                + "".join(f'<circle cx="{x}" cy="{y}" r="5" fill="{ac}"/>' for x, y in ((-50, -318), (0, -300), (50, -318), (-26, -262), (26, -262))))
     if o == "vestido":
         return _path("M-100,-195 Q0,-170 100,-195 L112,-178 Q0,-150 -112,-178 Z", ac, st, 0.7)
     return ""
@@ -364,8 +375,15 @@ def character_svg(spec: CharacterSpec, pose: Pose, style: Style, ground_y: float
     shadow = (f'<ellipse cx="{pose.x:.1f}" cy="{ground_y + 10}" rx="{105 * sc * sh:.1f}" ry="{22 * sc * sh:.1f}" '
               f'fill="#000" opacity="{0.25 * sh:.2f}"/>')
 
+    behind = ""
+    if spec.species == "tortuga":
+        behind = (_ell(0, -275, 128, 116, shade(fur_dark, .9), style)
+                  + "".join(_line(d, spec.accent, 4, 'opacity="0.8"') for d in (
+                      "M-80,-330 L-40,-290 L-40,-240 M80,-330 L40,-290 L40,-240 M-40,-290 L40,-290 M-40,-240 L40,-240",)))
+    elif spec.accessory == "mochila":
+        behind = f'<rect x="-112" y="-345" width="70" height="128" rx="20" fill="{spec.accent}" {_o(style)}/>'
     # cuerpo (con bob y lean alrededor de la cadera)
-    body = (_tail(spec, pose, style, fur, fur_dark, belly)
+    body = (behind + _tail(spec, pose, style, fur, fur_dark, belly)
             + _arm(spec, style, -1, pose.arm_l, fur, oc)
             + _leg(spec, style, -1, pose.leg_l, pants, shoe)
             + _leg(spec, style, 1, pose.leg_r, pants, shoe)

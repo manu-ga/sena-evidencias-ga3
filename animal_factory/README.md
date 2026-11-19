@@ -42,7 +42,7 @@ No probado: Safari en un iPhone físico, el `Dockerfile`, Codespaces y Hugging F
 | Carpeta | Qué hace |
 |---|---|
 | `factory/story` | Generador de historias por plantillas (5 tramas: dinero, amor, fama, valentía, superación; 7 escenas cada una) |
-| `factory/characters` | 8 personajes fijos (gato, perro, zorro, conejo, oso, cerdo, rana, ratón) con rig SVG |
+| `factory/characters` | 10 personajes fijos (gato, perro, zorro, conejo ×2, oso, cerdo, rana, ratón, tortuga) con rig SVG |
 | `factory/animation` | Poses por tiempo, 13 fondos, cámara, subtítulos y render de fotogramas |
 | `factory/audio` | Voces (Piper), efectos y música sintetizados, mezcla con *ducking* |
 | `factory/video` | Montaje y exportación con FFmpeg |
@@ -54,8 +54,8 @@ Detalles de diseño y versiones: `docs/PLAN_TECNICO.md`.
 
 ## Limitaciones honestas
 
-- **El guion no lo escribe una IA generativa.** Es un motor de plantillas: detecta animal y tema por palabras clave (8 animales, 5 temas) y rellena una trama escrita a mano. Una idea sin palabras reconocidas usa la trama de superación. El protagonista conserva su género fijo aunque la idea diga otro.
-- **Solo hay 3 voces de Piper.** Los 8 personajes + narrador se diferencian cambiando tono y velocidad; algunas voces se parecen.
+- **El guion no lo escribe una IA generativa.** Es un motor de plantillas: detecta animal y tema por palabras clave (9 animales entendidos, 5 temas) y rellena una trama escrita a mano. Una idea sin palabras reconocidas usa la trama de superación. El protagonista conserva su género fijo aunque la idea diga otro.
+- **Solo hay 3 voces de Piper.** Los 10 personajes + narrador se diferencian cambiando tono y velocidad; algunas voces se parecen.
 - **Animación tipo "recortable"** (muñecos articulados vistos de frente), no dibujo cuadro a cuadro.
 - **Duración:** cada escena dura entre 8 y 10 s; el video total queda entre ~60 y ~63 s. Si una escena tiene poca voz, se completa con acción y música.
 - La cola admite 3 trabajos a la vez y los procesa uno por uno.
@@ -67,3 +67,11 @@ Las voces pasan por la interfaz `TTSProvider` (`factory/audio/tts.py`): un méto
 ## Cambiar el generador de historias
 
 `factory/story/generator.py` define el protocolo `StoryProvider`. El generador actual por plantillas es el único implementado.
+
+## Guion hecho a mano: "El zorro que vendió la Luna"
+
+`examples/zorro_luna.py` arma un guion de 6 escenas de 10 s sin pasar por el generador y lo renderiza:
+
+```bash
+python examples/zorro_luna.py salida final      # o "borrador" para probar rápido
+```

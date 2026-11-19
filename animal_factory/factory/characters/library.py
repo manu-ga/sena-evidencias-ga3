@@ -60,6 +60,20 @@ CHARACTERS: dict[str, CharacterSpec] = {c.id: c for c in [
         accessory="moño", eye_color="#1b5e20",
         voice=V_DANIELA, pitch=1.26, rate=0.95, color="#b8f09a"),
     CharacterSpec(
+        id="perla", name="Doña Perla", species="tortuga", gender="f",
+        personality="anciana serena y muy aguda",
+        fur="#9ccc65", fur_dark="#2f6b3a", belly="#e6f2c8",
+        outfit="chal", outfit_color="#8e5bd0", accent="#ffd23f",
+        accessory="gafas", eye_color="#33691e",
+        voice=V_DANIELA, pitch=0.88, rate=1.12, scale=0.82, color="#d3b3ff"),
+    CharacterSpec(
+        id="tomas", name="Tomás", species="conejo", gender="m",
+        personality="ilusionado y confiado",
+        fur="#f4f1ee", fur_dark="#b9b2ad", belly="#ffd9e3",
+        outfit="overol", outfit_color="#2f6fd1", accent="#ffd23f",
+        accessory="mochila", eye_color="#3e2723",
+        voice=V_ALD, pitch=1.38, rate=0.95, scale=0.8, color="#a5d8ff"),
+    CharacterSpec(
         id="pepe", name="Pepe", species="raton", gender="m",
         personality="nervioso y muy listo",
         fur="#b8b8c4", fur_dark="#8a8a9a", belly="#f0e6e6",

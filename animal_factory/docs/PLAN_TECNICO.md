@@ -31,7 +31,7 @@ Probadas juntas en Python 3.13 y FFmpeg 6.1 (ver `requirements.txt`).
 
 ## Limitaciones honestas del MVP
 
-- El guion sale de plantillas, no de un modelo de lenguaje. Entiende ocho animales y cinco temas. Una idea fuera de eso usa la trama de superación.
+- El guion sale de plantillas, no de un modelo de lenguaje. Entiende ocho animales (más la tortuga, que solo se usa en guiones a mano) y cinco temas. Una idea fuera de eso usa la trama de superación.
 - Las tres voces de Piper se diferencian con cambios de tono y velocidad. No hay un reparto de voces distintas para cada personaje.
 - La animación es de estilo "recortable" frontal, no de dibujo cuadro a cuadro.
 - Un video final de 60 s tarda minutos en un servidor gratuito de 2 núcleos. El modo "borrador" es unas 8 veces más rápido.
