@@ -1,0 +1,604 @@
+{
+ "fps": 30,
+ "duration": 38.18,
+ "voice": "es_MX-claude-high",
+ "escala": 0.66,
+ "segments": [
+  {
+   "id": "gancho",
+   "text": "¿Meter plata en anuncios de dropshipping o arriesgarla en trading? ¡No elijas a ciegas!",
+   "start": 0.0,
+   "end": 3.65,
+   "words": 14,
+   "reconocidas": "84 % de letras"
+  },
+  {
+   "id": "filtro",
+   "text": "En treinta segundos te muestro qué exige cada uno para no quemar tu capital.",
+   "start": 3.73,
+   "end": 7.01,
+   "words": 14,
+   "reconocidas": "87 % de letras"
+  },
+  {
+   "id": "primero",
+   "text": "Primero: en anuncios de dropshipping ganas o pierdes según el creativo, el ángulo y la conversión; si el anuncio no conecta, el tráfico se va en seco.",
+   "start": 7.09,
+   "end": 14.79,
+   "words": 27,
+   "reconocidas": "95 % de letras"
+  },
+  {
+   "id": "segundo",
+   "text": "Segundo: en trading ganas o pierdes según lectura de mercado, gestión de riesgo y disciplina; un mal lote o una emoción te borra la cuenta.",
+   "start": 14.87,
+   "end": 21.83,
+   "words": 25,
+   "reconocidas": "96 % de letras"
+  },
+  {
+   "id": "tercero",
+   "text": "Tercero: en ads necesitas validar producto y oferta; en trading necesitas reglas estrictas y paciencia en pantalla.",
+   "start": 21.91,
+   "end": 27.62,
+   "words": 17,
+   "reconocidas": "95 % de letras"
+  },
+  {
+   "id": "error",
+   "text": "El error de casi todos es saltar al que ve más fácil y meter dinero sin medir cuánto puede perder.",
+   "start": 27.7,
+   "end": 32.05,
+   "words": 20,
+   "reconocidas": "100 % de letras"
+  },
+  {
+   "id": "cierre",
+   "text": "Guarda este video si estás decidiendo tu próximo paso y comenta DIFERENCIA para desglosar cuál encaja mejor contigo.",
+   "start": 32.13,
+   "end": 37.48,
+   "words": 18,
+   "reconocidas": "96 % de letras"
+  }
+ ],
+ "shots": [
+  {
+   "kind": "slam",
+   "start": 0.0,
+   "props": {
+    "title": "¿DÓNDE VA TU PLATA?",
+    "left": "ADS",
+    "leftSub": "DROPSHIPPING",
+    "right": "TRADING"
+   },
+   "seg": "gancho",
+   "end": 1.531
+  },
+  {
+   "kind": "zoomside",
+   "start": 1.531,
+   "props": {
+    "side": "trading",
+    "label": "TRADING",
+    "sub": "RIESGO REAL"
+   },
+   "seg": "gancho",
+   "end": 2.6
+  },
+  {
+   "kind": "keyword",
+   "start": 2.6,
+   "props": {
+    "text": "NO ELIJAS A CIEGAS",
+    "side": "red",
+    "tag": "¡ATENCIÓN!"
+   },
+   "seg": "gancho",
+   "end": 3.73
+  },
+  {
+   "kind": "clockcols",
+   "start": 3.73,
+   "props": {
+    "seconds": 30
+   },
+   "seg": "filtro",
+   "end": 6.09
+  },
+  {
+   "kind": "keyword",
+   "start": 6.09,
+   "props": {
+    "text": "QUEMAR TU CAPITAL",
+    "side": "red",
+    "tag": "EVÍTALO"
+   },
+   "seg": "filtro",
+   "end": 7.09
+  },
+  {
+   "kind": "funnel",
+   "start": 7.09,
+   "props": {
+    "label": "01 · ADS",
+    "tags": [
+     "CREATIVO",
+     "CONVERSIÓN"
+    ]
+   },
+   "seg": "primero",
+   "end": 8.78
+  },
+  {
+   "kind": "duo",
+   "start": 8.78,
+   "props": {
+    "a": "GANAS",
+    "b": "PIERDES",
+    "side": "ads"
+   },
+   "seg": "primero",
+   "end": 9.85
+  },
+  {
+   "kind": "triple",
+   "start": 9.85,
+   "props": {
+    "words": [
+     "CREATIVO",
+     "ÁNGULO",
+     "CONVERSIÓN"
+    ],
+    "side": "ads",
+    "tag": "ADS"
+   },
+   "seg": "primero",
+   "end": 12.15
+  },
+  {
+   "kind": "noconnect",
+   "start": 12.15,
+   "props": {
+    "text": "NO CONECTA"
+   },
+   "seg": "primero",
+   "end": 13.59
+  },
+  {
+   "kind": "leak",
+   "start": 13.59,
+   "props": {
+    "text": "EL TRÁFICO SE VA EN SECO"
+   },
+   "seg": "primero",
+   "end": 14.87
+  },
+  {
+   "kind": "candles",
+   "start": 14.87,
+   "props": {
+    "label": "02 · TRADING",
+    "tags": [
+     "RIESGO",
+     "CONTROL EMOCIONAL"
+    ]
+   },
+   "seg": "segundo",
+   "end": 16.73
+  },
+  {
+   "kind": "keyword",
+   "start": 16.73,
+   "props": {
+    "text": "LECTURA DE MERCADO",
+    "side": "trading",
+    "tag": "TRADING"
+   },
+   "seg": "segundo",
+   "end": 17.89
+  },
+  {
+   "kind": "triple",
+   "start": 17.89,
+   "props": {
+    "words": [
+     "GESTIÓN DE RIESGO",
+     "DISCIPLINA"
+    ],
+    "side": "trading",
+    "tag": "TRADING"
+   },
+   "seg": "segundo",
+   "end": 19.79
+  },
+  {
+   "kind": "crash",
+   "start": 19.79,
+   "props": {
+    "text": "UN MAL LOTE",
+    "text2": "UNA EMOCIÓN",
+    "sub": "TE BORRA LA CUENTA"
+   },
+   "seg": "segundo",
+   "end": 21.91
+  },
+  {
+   "kind": "check",
+   "start": 21.91,
+   "props": {
+    "stage": 0,
+    "label": "03 · COMPARA",
+    "left": "PRUEBA DE OFERTA",
+    "right": "EJECUCIÓN Y RIESGO"
+   },
+   "seg": "tercero",
+   "end": 23.23
+  },
+  {
+   "kind": "check",
+   "start": 23.23,
+   "props": {
+    "stage": 1,
+    "label": "03 · COMPARA",
+    "left": "PRUEBA DE OFERTA",
+    "right": "EJECUCIÓN Y RIESGO"
+   },
+   "seg": "tercero",
+   "end": 24.91
+  },
+  {
+   "kind": "check",
+   "start": 24.91,
+   "props": {
+    "stage": 2,
+    "label": "03 · COMPARA",
+    "left": "PRUEBA DE OFERTA",
+    "right": "EJECUCIÓN Y RIESGO"
+   },
+   "seg": "tercero",
+   "end": 26.55
+  },
+  {
+   "kind": "keyword",
+   "start": 26.55,
+   "props": {
+    "text": "PACIENCIA EN PANTALLA",
+    "side": "trading",
+    "tag": "TRADING"
+   },
+   "seg": "tercero",
+   "end": 27.7
+  },
+  {
+   "kind": "alert",
+   "start": 27.7,
+   "props": {
+    "text": "EL ERROR MÁS CARO"
+   },
+   "seg": "error",
+   "end": 28.7
+  },
+  {
+   "kind": "keyword",
+   "start": 28.7,
+   "props": {
+    "text": "SALTAR AL MÁS FÁCIL",
+    "side": "red",
+    "tag": "ERROR #1"
+   },
+   "seg": "error",
+   "end": 29.98
+  },
+  {
+   "kind": "strike",
+   "start": 29.98,
+   "props": {
+    "text": "Entrar sin plan de pérdida"
+   },
+   "seg": "error",
+   "end": 32.13
+  },
+  {
+   "kind": "cta",
+   "start": 32.13,
+   "props": {
+    "stage": "guardar"
+   },
+   "seg": "cierre",
+   "end": 34.65
+  },
+  {
+   "kind": "cta",
+   "start": 34.65,
+   "props": {
+    "stage": "comenta"
+   },
+   "seg": "cierre",
+   "end": 36.05
+  },
+  {
+   "kind": "cta",
+   "start": 36.05,
+   "props": {
+    "stage": "final"
+   },
+   "seg": "cierre",
+   "end": 38.18
+  }
+ ],
+ "subs": [
+  {
+   "text": "¿Meter plata en",
+   "start": 0.0,
+   "end": 0.62,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "anuncios de dropshipping o",
+   "start": 0.62,
+   "end": 1.571,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "arriesgarla en trading?",
+   "start": 1.571,
+   "end": 2.64,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "¡No elijas a ciegas!",
+   "start": 2.64,
+   "end": 3.73,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "En treinta segundos te",
+   "start": 3.73,
+   "end": 4.479,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "muestro qué exige cada",
+   "start": 4.479,
+   "end": 5.57,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "uno para no quemar",
+   "start": 5.57,
+   "end": 6.45,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "tu capital.",
+   "start": 6.45,
+   "end": 6.94,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Primero: en",
+   "start": 7.09,
+   "end": 7.95,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "anuncios de dropshipping ganas",
+   "start": 7.95,
+   "end": 9.05,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "o pierdes según el",
+   "start": 9.05,
+   "end": 9.89,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "creativo, el ángulo y",
+   "start": 9.89,
+   "end": 11.41,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "la conversión;",
+   "start": 11.41,
+   "end": 12.19,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "si el anuncio no",
+   "start": 12.19,
+   "end": 12.81,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "conecta, el tráfico se",
+   "start": 12.81,
+   "end": 14.09,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "va en seco.",
+   "start": 14.09,
+   "end": 14.87,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "Segundo: en",
+   "start": 14.87,
+   "end": 15.583,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "trading ganas o pierdes",
+   "start": 15.583,
+   "end": 16.55,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "según lectura de mercado,",
+   "start": 16.55,
+   "end": 17.8,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "gestión de riesgo y",
+   "start": 17.93,
+   "end": 19.15,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "disciplina; un mal lote",
+   "start": 19.15,
+   "end": 20.47,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "o una emoción te",
+   "start": 20.47,
+   "end": 21.11,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "borra la cuenta.",
+   "start": 21.11,
+   "end": 21.8,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "Tercero: en",
+   "start": 21.91,
+   "end": 22.63,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "ads necesitas validar producto",
+   "start": 22.63,
+   "end": 23.91,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "y oferta;",
+   "start": 23.91,
+   "end": 24.83,
+   "side": "ads",
+   "emph": false
+  },
+  {
+   "text": "en trading necesitas reglas",
+   "start": 24.83,
+   "end": 26.09,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "estrictas y paciencia en",
+   "start": 26.09,
+   "end": 27.11,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "pantalla.",
+   "start": 27.11,
+   "end": 27.54,
+   "side": "trading",
+   "emph": false
+  },
+  {
+   "text": "El error de casi",
+   "start": 27.7,
+   "end": 28.26,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "todos es saltar al",
+   "start": 28.26,
+   "end": 29.14,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "que ve más fácil",
+   "start": 29.14,
+   "end": 29.8,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "y meter dinero sin",
+   "start": 29.8,
+   "end": 30.82,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "medir cuánto puede perder.",
+   "start": 30.82,
+   "end": 32.05,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Guarda este video si",
+   "start": 32.178,
+   "end": 32.95,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "estás decidiendo tu próximo",
+   "start": 32.95,
+   "end": 33.95,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "paso y comenta DIFERENCIA",
+   "start": 33.95,
+   "end": 35.25,
+   "side": "white",
+   "emph": true
+  },
+  {
+   "text": "para desglosar cuál encaja",
+   "start": 35.25,
+   "end": 36.65,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "mejor contigo.",
+   "start": 36.65,
+   "end": 37.33,
+   "side": "white",
+   "emph": false
+  }
+ ]
+}
