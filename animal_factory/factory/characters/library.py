@@ -82,7 +82,10 @@ CHARACTERS: dict[str, CharacterSpec] = {c.id: c for c in [
         voice=V_CLAUDE, pitch=1.3, rate=0.95, scale=0.86, color="#e0e0f0"),
 ]}
 
-SPECIES_TO_CHAR = {c.species: c.id for c in CHARACTERS.values()}
+# Protagonista por defecto de cada especie: el primero definido (Tomás y Doña Perla son extras de guiones a mano)
+SPECIES_TO_CHAR: dict[str, str] = {}
+for _c in CHARACTERS.values():
+    SPECIES_TO_CHAR.setdefault(_c.species, _c.id)
 
 
 def get(char_id: str) -> CharacterSpec:
