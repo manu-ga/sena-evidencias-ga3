@@ -1,0 +1,23 @@
+{
+  "name": "remotion-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Edición de video con Remotion (React) para los proyectos de este repositorio",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render src/index.ts Demo out/demo.mp4",
+    "still": "remotion still src/index.ts Demo out/demo.png --frame=45",
+    "compositions": "remotion compositions src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}
