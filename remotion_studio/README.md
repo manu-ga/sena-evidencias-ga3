@@ -61,3 +61,14 @@ REMOTION_BROWSER=/ruta/a/chromium npx remotion render src/index.ts AdsVsTrading 
 - Los tiempos por palabra los mide Whisper sobre la voz sintética (Piper no los entrega). El texto de los subtítulos es siempre el del guion.
 - `src/ads_trading/shots.tsx` tiene los 15 tipos de plano. Para ver las zonas seguras: `--props='{"safeGuides":true}'`.
 - Render (4 núcleos, software): ~3,5 min.
+
+## Reel "NAWHI Ashwagandha" (composición `NawhiReel`)
+
+Video vertical de ~21 s a partir del afiche del producto: cámara con zooms sobre cada frase del afiche, voz calmada, subtítulos en píldoras, música suave y cierre con marca y aviso. El texto usa solo lo que dice el afiche (sin precios, resultados ni puntos de venta).
+
+```bash
+# el afiche va en public/nawhi.jpg (no se sube al repositorio)
+python scripts/build_nawhi.py --voces /ruta/voces --whisper /ruta/faster-whisper-small   # voz, música y línea de tiempo
+REMOTION_BROWSER=/ruta/a/chromium npx remotion render src/index.ts NawhiReel out/nawhi.mp4
+```
+Guion y cámara: `SEGMENTS` en `scripts/build_nawhi.py`. Para la voz se usa la ortografía original de "NAWHI", "Ashwagandha" y "Withania somnifera": se comprobó en el fonetizador de Piper que la pronuncia bien (`nˈawi`, `aʃwaɣˈanda`, `witˈanja`).
