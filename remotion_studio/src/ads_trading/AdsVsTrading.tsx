@@ -47,7 +47,7 @@ const SafeGuides: React.FC = () => (
   </AbsoluteFill>
 );
 
-export const AdsVsTrading: React.FC<{ safeGuides?: boolean }> = ({ safeGuides = false }) => {
+export const AdsVsTrading: React.FC<{ safeGuides?: boolean; hideSubs?: boolean }> = ({ safeGuides = false, hideSubs = false }) => {
   const shots = timeline.shots as Shot[];
   const subs = timeline.subs as Sub[];
   return (
@@ -63,7 +63,7 @@ export const AdsVsTrading: React.FC<{ safeGuides?: boolean }> = ({ safeGuides = 
           </Sequence>
         );
       })}
-      {subs.map((s, i) => (
+      {!hideSubs && subs.map((s, i) => (
         <Sequence key={`sub${i}`} from={fr(s.start)} durationInFrames={Math.max(1, fr(s.end) - fr(s.start))}>
           <SubtitleChunk text={s.text} side={s.side} emph={s.emph} />
         </Sequence>
