@@ -1,0 +1,19 @@
+{
+  "name": "hyperframes-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Videos con HyperFrames (HTML -> MP4) para los proyectos de este repositorio",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "gsap": "3.15.0",
+    "hyperframes": "0.9.70"
+  },
+  "scripts": {
+    "preview": "hyperframes preview demo",
+    "check": "hyperframes check demo",
+    "render": "hyperframes render demo -o demo/renders/demo.mp4",
+    "doctor": "hyperframes doctor"
+  }
+}
