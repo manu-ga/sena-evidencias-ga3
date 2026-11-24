@@ -40,6 +40,11 @@ python3 python_encapsulamiento/ejercicio2_coche/coche.py
 python3 python_encapsulamiento/ejercicio3_producto/producto.py
 ```
 
+
+## Animal Factory AI 2D (proyecto adicional)
+
+La carpeta [`animal_factory/`](animal_factory/README.md) contiene una fábrica de dibujos animados 2D: escribes una idea y obtienes un MP4 vertical de ~60 s con voces, música y subtítulos, desde una página web pensada para iPhone. No forma parte de la evidencia de encapsulamiento.
+
 ## Autor
 - **Aprendiz:** Manuel David Carvajal Machado
 - **Programa:** Análisis y Desarrollo de Software

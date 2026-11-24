@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ff7a3d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Animal Factory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>🐾 Animal Factory</h1>
+  <p>Escribe una idea y obtén un dibujo animado de ~60 s con voces.</p>
+</header>
+
+<main>
+  <section id="gate" class="card" hidden>
+    <h2>Código de acceso</h2>
+    <p class="hint">Esta fábrica está protegida. Escribe el código que te dieron.</p>
+    <input id="code" type="password" autocomplete="current-password" placeholder="Código">
+    <p id="gateMsg" class="msg" hidden></p>
+    <button id="codeBtn" class="btn primary">Entrar</button>
+  </section>
+
+  <section id="problems" class="card warn" hidden></section>
+
+  <section id="app" hidden>
+    <div class="card">
+      <h2>1 · Tu idea</h2>
+      <textarea id="idea" rows="4" maxlength="400" placeholder="Ej.: Un gato pobre quiere hacerse millonario, pero sus decisiones lo meten en problemas"></textarea>
+      <div class="count"><span id="chars">0</span>/400</div>
+      <div id="examples" class="chips" aria-label="Ideas de ejemplo"></div>
+    </div>
+
+    <div class="card">
+      <h2>2 · Protagonista</h2>
+      <div id="heroes" class="heroes" role="radiogroup" aria-label="Protagonista"></div>
+      <h2 class="sub">Estilo</h2>
+      <div id="styles" class="seg" role="radiogroup" aria-label="Estilo"></div>
+      <h2 class="sub">Calidad</h2>
+      <div id="qualities" class="seg" role="radiogroup" aria-label="Calidad"></div>
+    </div>
+
+    <div class="actions">
+      <button id="previewBtn" class="btn">📝 Ver guion y escenas</button>
+      <button id="goBtn" class="btn primary big">🎬 GENERAR VIDEO</button>
+    </div>
+    <p id="msg" class="msg" role="alert" hidden></p>
+
+    <section id="statusCard" class="card" hidden>
+      <h2>Estado de generación</h2>
+      <div class="bar"><div id="barFill"></div></div>
+      <p id="statusText" class="hint"></p>
+      <ol id="steps" class="steps"></ol>
+    </section>
+
+    <section id="resultCard" class="card" hidden>
+      <h2 id="resultTitle">Vista previa</h2>
+      <video id="video" controls playsinline preload="metadata"></video>
+      <div class="actions two">
+        <a id="downloadBtn" class="btn primary" download>⬇️ Descargar MP4</a>
+        <a id="srtBtn" class="btn" download>💬 Subtítulos (.srt)</a>
+      </div>
+      <p id="resultInfo" class="hint"></p>
+    </section>
+
+    <section id="scenesCard" class="card" hidden>
+      <h2 id="scenesTitle">Panel de escenas</h2>
+      <p id="understood" class="hint"></p>
+      <div id="scenes" class="scenes"></div>
+    </section>
+
+    <section class="card">
+      <h2>Historial</h2>
+      <div id="history" class="history"><p class="hint">Todavía no hay producciones.</p></div>
+    </section>
+  </section>
+</main>
+<footer>Animal Factory AI 2D · gratis y de código abierto</footer>
+<script src="app.js"></script>
+</body>
+</html>

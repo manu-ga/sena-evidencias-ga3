@@ -1,0 +1,12 @@
+# Versiones probadas juntas en Python 3.13 (Linux x86_64). Todas gratuitas y de código abierto.
+piper-tts==1.8.0        # voces sintéticas (GPL-3.0). Usa onnxruntime.
+onnxruntime==1.29.0
+resvg-py==0.5.0         # SVG -> PNG sin dependencias del sistema
+numpy==2.5.3            # síntesis de efectos y música, mezcla
+pillow==12.3.0          # mide el texto de los subtítulos con la fuente real
+fastapi==0.165.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+# Solo para pruebas:
+pytest==9.1.1
+httpx==0.28.1

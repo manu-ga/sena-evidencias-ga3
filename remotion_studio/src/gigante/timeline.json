@@ -1,0 +1,908 @@
+{
+ "fps": 30,
+ "duration": 89.671,
+ "segments": [
+  {
+   "id": "gancho",
+   "start": 0.25,
+   "end": 9.26,
+   "window": [
+    0.0,
+    10.0
+   ],
+   "scale": 0.787
+  },
+  {
+   "id": "historias",
+   "start": 9.56,
+   "end": 26.92,
+   "window": [
+    10.0,
+    23.0
+   ],
+   "scale": 0.787
+  },
+  {
+   "id": "mundiales",
+   "start": 27.22,
+   "end": 38.901,
+   "window": [
+    23.0,
+    38.0
+   ],
+   "scale": 0.787
+  },
+  {
+   "id": "titulos",
+   "start": 39.201,
+   "end": 53.501,
+   "window": [
+    38.0,
+    52.0
+   ],
+   "scale": 0.787
+  },
+  {
+   "id": "dato",
+   "start": 53.801,
+   "end": 67.121,
+   "window": [
+    52.0,
+    70.0
+   ],
+   "scale": 0.787
+  },
+  {
+   "id": "veredicto",
+   "start": 67.421,
+   "end": 87.871,
+   "window": [
+    70.0,
+    90.0
+   ],
+   "scale": 0.787
+  }
+ ],
+ "shots": [
+  {
+   "kind": "giants",
+   "start": 0.0,
+   "hit": true,
+   "props": {},
+   "scene": "gancho",
+   "end": 4.57
+  },
+  {
+   "kind": "question",
+   "start": 4.57,
+   "hit": false,
+   "props": {},
+   "scene": "gancho",
+   "end": 7.19
+  },
+  {
+   "kind": "four",
+   "start": 7.19,
+   "hit": true,
+   "props": {},
+   "scene": "gancho",
+   "end": 9.41
+  },
+  {
+   "kind": "team",
+   "start": 9.41,
+   "hit": true,
+   "props": {
+    "team": "PAR",
+    "badge": "2 COPAS AMÉRICA",
+    "players": [
+     "José Luis Chilavert",
+     "Roque Santa Cruz"
+    ]
+   },
+   "scene": "historias",
+   "end": 13.22
+  },
+  {
+   "kind": "team",
+   "start": 13.22,
+   "hit": true,
+   "props": {
+    "team": "PER",
+    "badge": "BICAMPEÓN CONTINENTAL",
+    "players": [
+     "Teófilo Cubillas",
+     "Héctor Chumpitaz"
+    ]
+   },
+   "scene": "historias",
+   "end": 18.02
+  },
+  {
+   "kind": "team",
+   "start": 18.02,
+   "hit": true,
+   "props": {
+    "team": "COL",
+    "badge": "CAMPEÓN COPA AMÉRICA 2001",
+    "players": [
+     "Carlos Valderrama",
+     "René Higuita",
+     "Radamel Falcao",
+     "James Rodríguez"
+    ]
+   },
+   "scene": "historias",
+   "end": 21.74
+  },
+  {
+   "kind": "team",
+   "start": 21.74,
+   "hit": true,
+   "props": {
+    "team": "CHI",
+    "badge": "BICAMPEÓN 2015 · 2016",
+    "players": [
+     "Elías Figueroa",
+     "Iván Zamorano",
+     "Marcelo Salas",
+     "Alexis Sánchez",
+     "Arturo Vidal"
+    ]
+   },
+   "scene": "historias",
+   "end": 27.07
+  },
+  {
+   "kind": "chapter",
+   "start": 27.07,
+   "hit": true,
+   "props": {
+    "kicker": "CAPÍTULO 2",
+    "title": "LA BATALLA MUNDIALISTA"
+   },
+   "scene": "mundiales",
+   "end": 30.1
+  },
+  {
+   "kind": "podium",
+   "start": 30.1,
+   "hit": true,
+   "props": {
+    "team": "CHI",
+    "place": "3.er",
+    "label": "PUESTO",
+    "event": "MUNDIAL 1962"
+   },
+   "scene": "mundiales",
+   "end": 32.32
+  },
+  {
+   "kind": "quarters",
+   "start": 32.32,
+   "hit": true,
+   "props": {
+    "rows": [
+     [
+      "COL",
+      "2014"
+     ],
+     [
+      "PAR",
+      "2010"
+     ]
+    ]
+   },
+   "scene": "mundiales",
+   "end": 35.54
+  },
+  {
+   "kind": "quarters",
+   "start": 35.54,
+   "hit": true,
+   "props": {
+    "rows": [
+     [
+      "COL",
+      "2014"
+     ],
+     [
+      "PAR",
+      "2010"
+     ],
+     [
+      "PER",
+      "1970"
+     ]
+    ]
+   },
+   "scene": "mundiales",
+   "end": 39.051
+  },
+  {
+   "kind": "bars",
+   "start": 39.051,
+   "hit": true,
+   "props": {},
+   "scene": "titulos",
+   "end": 46.601
+  },
+  {
+   "kind": "words",
+   "start": 46.601,
+   "hit": false,
+   "props": {
+    "lines": [
+     "LA GRANDEZA",
+     "NO SOLO SON",
+     "TROFEOS"
+    ]
+   },
+   "scene": "titulos",
+   "end": 50.321
+  },
+  {
+   "kind": "words",
+   "start": 50.321,
+   "hit": true,
+   "props": {
+    "lines": [
+     "GENERACIONES",
+     "ESTRELLAS",
+     "ACTUACIONES"
+    ],
+    "gold": true
+   },
+   "scene": "titulos",
+   "end": 53.651
+  },
+  {
+   "kind": "alert",
+   "start": 53.651,
+   "hit": true,
+   "props": {
+    "text": "EL DATO QUE CAMBIA TODO"
+   },
+   "scene": "dato",
+   "end": 56.041
+  },
+  {
+   "kind": "ranking",
+   "start": 56.041,
+   "hit": true,
+   "props": {},
+   "scene": "dato",
+   "end": 60.341
+  },
+  {
+   "kind": "history",
+   "start": 60.341,
+   "hit": true,
+   "props": {},
+   "scene": "dato",
+   "end": 64.861
+  },
+  {
+   "kind": "balance",
+   "start": 64.861,
+   "hit": true,
+   "props": {},
+   "scene": "dato",
+   "end": 67.271
+  },
+  {
+   "kind": "score",
+   "start": 67.271,
+   "hit": true,
+   "props": {
+    "stage": 0
+   },
+   "scene": "veredicto",
+   "end": 69.561
+  },
+  {
+   "kind": "score",
+   "start": 69.561,
+   "hit": true,
+   "props": {
+    "stage": 1
+   },
+   "scene": "veredicto",
+   "end": 72.159
+  },
+  {
+   "kind": "debate",
+   "start": 72.159,
+   "hit": false,
+   "props": {
+    "stage": 0
+   },
+   "scene": "veredicto",
+   "end": 75.221
+  },
+  {
+   "kind": "debate",
+   "start": 75.221,
+   "hit": true,
+   "props": {
+    "stage": 1
+   },
+   "scene": "veredicto",
+   "end": 78.961
+  },
+  {
+   "kind": "final",
+   "start": 78.961,
+   "hit": true,
+   "props": {},
+   "scene": "veredicto",
+   "end": 89.671
+  }
+ ],
+ "subs": [
+  {
+   "text": "Argentina, Brasil y Uruguay",
+   "start": 0.25,
+   "end": 1.81,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "son los tres gigantes",
+   "start": 1.81,
+   "end": 2.93,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "históricos de Sudamérica.",
+   "start": 2.93,
+   "end": 4.65,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Pero hay una pregunta",
+   "start": 4.65,
+   "end": 5.41,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "que divide a todo",
+   "start": 5.41,
+   "end": 6.43,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "el continente:",
+   "start": 6.43,
+   "end": 7.27,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "¿quién merece ser el",
+   "start": 7.27,
+   "end": 8.39,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "cuarto grande?",
+   "start": 8.39,
+   "end": 9.28,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Paraguay, con dos Copas",
+   "start": 9.56,
+   "end": 10.78,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "América y leyendas como",
+   "start": 10.78,
+   "end": 12.02,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Chilavert y Santa Cruz.",
+   "start": 12.02,
+   "end": 13.3,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Perú, bicampeón continental,",
+   "start": 13.3,
+   "end": 15.08,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "con genios como Cubillas",
+   "start": 15.08,
+   "end": 16.98,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "y Chumpitaz.",
+   "start": 16.98,
+   "end": 18.1,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Colombia, con Valderrama,",
+   "start": 18.1,
+   "end": 19.728,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Higuita, Falcao y James.",
+   "start": 19.728,
+   "end": 21.32,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Y Chile,",
+   "start": 21.32,
+   "end": 22.04,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "con Elías Figueroa,",
+   "start": 22.04,
+   "end": 23.54,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Zamorano, Salas,",
+   "start": 23.54,
+   "end": 25.25,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Alexis Sánchez y Arturo",
+   "start": 25.38,
+   "end": 26.48,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Vidal.",
+   "start": 26.48,
+   "end": 27.07,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "En los Mundiales,",
+   "start": 27.22,
+   "end": 28.14,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Chile tiene una ventaja",
+   "start": 28.14,
+   "end": 29.34,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "histórica: alcanzó el tercer",
+   "start": 29.34,
+   "end": 30.86,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "puesto en 1962.",
+   "start": 30.86,
+   "end": 32.4,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Colombia y Paraguay llegaron",
+   "start": 32.4,
+   "end": 34.36,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "a cuartos de final.",
+   "start": 34.36,
+   "end": 35.57,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Perú también alcanzó esa",
+   "start": 35.62,
+   "end": 36.84,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "instancia en 1970.",
+   "start": 36.84,
+   "end": 38.69,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Chile conquistó dos Copas",
+   "start": 39.321,
+   "end": 40.781,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "América consecutivas.",
+   "start": 40.781,
+   "end": 42.351,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Paraguay también tiene dos",
+   "start": 42.381,
+   "end": 43.721,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "títulos.",
+   "start": 43.721,
+   "end": 44.218,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Perú suma dos y",
+   "start": 44.218,
+   "end": 45.281,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Colombia uno.",
+   "start": 45.281,
+   "end": 46.591,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Pero la grandeza no",
+   "start": 46.681,
+   "end": 47.581,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "se mide solamente con",
+   "start": 47.581,
+   "end": 48.681,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "trofeos: también se mide",
+   "start": 48.681,
+   "end": 50.161,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "con generaciones,",
+   "start": 50.161,
+   "end": 51.361,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "estrellas y actuaciones inolvidables.",
+   "start": 51.361,
+   "end": 53.571,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Y atención:",
+   "start": 53.801,
+   "end": 54.451,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "en noviembre de 2026,",
+   "start": 54.561,
+   "end": 56.121,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Colombia regresó al top",
+   "start": 56.121,
+   "end": 57.541,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "10 del ranking FIFA,",
+   "start": 57.541,
+   "end": 59.051,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "ocupando el décimo puesto.",
+   "start": 59.061,
+   "end": 60.371,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Chile también alcanzó históricamente",
+   "start": 60.421,
+   "end": 62.281,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "el tercer lugar mundial,",
+   "start": 62.281,
+   "end": 63.661,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "igual que Colombia.",
+   "start": 63.661,
+   "end": 64.851,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "¡La batalla está más",
+   "start": 64.941,
+   "end": 65.861,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "pareja de lo que",
+   "start": 65.861,
+   "end": 66.641,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "parece!",
+   "start": 66.641,
+   "end": 67.211,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Aplicando nuestro sistema de",
+   "start": 67.421,
+   "end": 68.881,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "puntuación, Chile obtiene el",
+   "start": 68.881,
+   "end": 70.381,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "cuarto puesto de esta",
+   "start": 70.381,
+   "end": 71.321,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "clasificación.",
+   "start": 71.321,
+   "end": 72.239,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Pero esto no significa",
+   "start": 72.239,
+   "end": 73.301,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "que la discusión esté",
+   "start": 73.301,
+   "end": 74.541,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "terminada.",
+   "start": 74.541,
+   "end": 75.301,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Colombia tiene argumentos,",
+   "start": 75.301,
+   "end": 76.681,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Paraguay tiene historia y",
+   "start": 76.681,
+   "end": 77.861,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Perú tiene leyendas.",
+   "start": 77.861,
+   "end": 78.991,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Ahora queremos conocer tu",
+   "start": 79.041,
+   "end": 80.281,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "opinión: ¿Chile merece ser",
+   "start": 80.281,
+   "end": 81.781,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "el cuarto gigante de",
+   "start": 81.781,
+   "end": 82.761,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Sudamérica?",
+   "start": 82.761,
+   "end": 83.601,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "¿O debería ser Colombia,",
+   "start": 83.601,
+   "end": 84.981,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "Paraguay o Perú?",
+   "start": 84.981,
+   "end": 86.061,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "¡Te leemos en los",
+   "start": 86.061,
+   "end": 87.001,
+   "side": "white",
+   "emph": false
+  },
+  {
+   "text": "comentarios!",
+   "start": 87.001,
+   "end": 87.561,
+   "side": "white",
+   "emph": false
+  }
+ ],
+ "score": [
+  {
+   "team": "CHI",
+   "p_copas": 6,
+   "p_mundial": 5,
+   "p_part": 4.5,
+   "p_rank": 0,
+   "total": 15.5,
+   "copas": 2,
+   "mundiales": 9,
+   "ranking": 51
+  },
+  {
+   "team": "PAR",
+   "p_copas": 6,
+   "p_mundial": 3,
+   "p_part": 4.5,
+   "p_rank": 1,
+   "total": 14.5,
+   "copas": 2,
+   "mundiales": 9,
+   "ranking": 31
+  },
+  {
+   "team": "COL",
+   "p_copas": 3,
+   "p_mundial": 3,
+   "p_part": 3.5,
+   "p_rank": 3,
+   "total": 12.5,
+   "copas": 1,
+   "mundiales": 7,
+   "ranking": 10
+  },
+  {
+   "team": "PER",
+   "p_copas": 6,
+   "p_mundial": 3,
+   "p_part": 2.5,
+   "p_rank": 0,
+   "total": 11.5,
+   "copas": 2,
+   "mundiales": 5,
+   "ranking": 52
+  }
+ ],
+ "teams": {
+  "CHI": {
+   "copas": 2,
+   "copas_anos": "2015 · 2016",
+   "mejor_mundial": "3.er puesto (1962)",
+   "mm_pts": 5,
+   "mundiales": 9,
+   "ranking": 51
+  },
+  "PAR": {
+   "copas": 2,
+   "copas_anos": "1953 · 1979",
+   "mejor_mundial": "Cuartos (2010)",
+   "mm_pts": 3,
+   "mundiales": 9,
+   "ranking": 31
+  },
+  "PER": {
+   "copas": 2,
+   "copas_anos": "1939 · 1975",
+   "mejor_mundial": "Cuartos (1970)",
+   "mm_pts": 3,
+   "mundiales": 5,
+   "ranking": 52
+  },
+  "COL": {
+   "copas": 1,
+   "copas_anos": "2001",
+   "mejor_mundial": "Cuartos (2014)",
+   "mm_pts": 3,
+   "mundiales": 7,
+   "ranking": 10
+  }
+ },
+ "fuentes": "FIFA/Coca-Cola Men's World Ranking (18/11/2026) y Wikipedia (consulta 24/11/2026)"
+}

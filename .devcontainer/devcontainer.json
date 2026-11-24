@@ -1,0 +1,7 @@
+{
+  "name": "Animal Factory",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core && cd animal_factory && pip install -r requirements.txt && python scripts/descargar_voces.py",
+  "forwardPorts": [8000],
+  "portsAttributes": { "8000": { "label": "Animal Factory", "onAutoForward": "openBrowser" } }
+}
