@@ -72,3 +72,29 @@ python scripts/build_nawhi.py --voces /ruta/voces --whisper /ruta/faster-whisper
 REMOTION_BROWSER=/ruta/a/chromium npx remotion render src/index.ts NawhiReel out/nawhi.mp4
 ```
 Guion y cámara: `SEGMENTS` en `scripts/build_nawhi.py`. Para la voz se usa la ortografía original de "NAWHI", "Ashwagandha" y "Withania somnifera": se comprobó en el fonetizador de Piper que la pronuncia bien (`nˈawi`, `aʃwaɣˈanda`, `witˈanja`).
+
+## Documental "¿Quién es el cuarto gigante de Sudamérica?" (composición `CuartoGigante`)
+
+Documental vertical de ~90 s: estadio animado, tarjetas de selección, podio, gráfico de Copas América, ranking FIFA, tabla de criterios y pantalla final con pregunta. Narrador con voz sintética masculina (Piper `es_MX-ald-medium`, tono más grave). No es una voz clonada. Música y sonidos de estadio sintetizados.
+
+```bash
+python scripts/build_gigante.py --voces /ruta/voces --whisper /ruta/faster-whisper-small
+REMOTION_BROWSER=/ruta/a/chromium npx remotion render src/index.ts CuartoGigante out/cuarto_gigante.mp4
+```
+
+**Datos verificados el 24/11/2026:**
+- Ranking FIFA/Coca-Cola del 18/11/2026 (vía el módulo de Wikipedia que lo replica): Colombia 10.ª (+1), Paraguay 31.º, Chile 51.º y Perú 52.º.
+- Fichas de cada selección en Wikipedia, y el cuadro eliminatorio del Mundial 2026: Colombia y Paraguay cayeron en octavos.
+
+**Clasificación propia, no oficial** (se muestra en pantalla con sus criterios y fuentes):
+
+| Criterio | Puntos |
+|---|---|
+| Copas América | 3 por título |
+| Mejor resultado mundialista | 3.er puesto = 5; cuartos de final = 3 |
+| Participaciones en Mundiales (incluye 2026) | 0,5 cada una |
+| Ranking FIFA actual | top 10 = 3; 11-30 = 2; 31-50 = 1; 51+ = 0 |
+
+Resultado: Chile 15,5 · Paraguay 14,5 · Colombia 12,5 · Perú 11,5.
+
+Sin fotos de jugadores ni logos de FIFA, ESPN o CONMEBOL: no hay material con licencia. Las banderas están dibujadas en SVG.
